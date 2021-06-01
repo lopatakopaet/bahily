@@ -1,0 +1,98 @@
+/*-------Table----------
+/*-----------------*/
+.table_blur {
+  background: #f5ffff;
+  
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.table_blur th {
+  padding: 10px 15px;
+  position: relative;
+
+}
+.table_blur th:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  height: 25%;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255,255,255,.08));
+}
+.table_blur tr:nth-child(odd) {
+  background: #ebf3f9;
+}
+
+.table_blur td {
+  border: 1px solid #e3eef7;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.table_blur tbody:hover td {
+  color: transparent;
+  text-shadow: 0 0 3px #a09f9d;
+}
+.table_blur tbody:hover tr:hover td {
+  color: #444444;
+  text-shadow: none;
+}
+
+/*----------------------------*/
+
+.col_but{
+  display: block;
+
+  line-height: 30px;
+  text-decoration: none;
+  color: dodgerblue;
+  text-align: center;
+
+  position: relative;
+  transition: all .35s;
+  
+  margin-top: 15px;
+
+}
+
+.col_span{
+
+  position: relative;
+  z-index: 2;
+
+}
+
+.col_but:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #9FD1E0;
+  transition: all .35s;
+}
+
+.col_but:hover{
+  color: black;
+}
+
+.col_but:hover:after{
+  width: 100%;
+}
+.activeclick
+{
+  color: black;
+  background-color: #80bfd1;
+  transition: 1.35s;
+  
+}
+.unactive
+{
+    transition: 1.35s;
+}

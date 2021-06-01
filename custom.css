@@ -1,0 +1,199 @@
+	/*бутстрап перекрывает стили используй !important  #9CDAFC*/
+
+body{
+	background-color: #F3E7E8;
+}
+.navbar
+{
+	min-height: 12%;/* чтобы разбить страницу на отсеки в проц соотношении 
+					  таким образом опустить несостыковки при разных размерах экранов*/
+    background-color: #0275d8;
+}
+/*  */
+.navbar-nav .nav-link:first-child {
+    color: #F0E68C;
+}
+
+.navbar-light .navbar-brand
+{
+	/*пернос слов при масштабируемости (в шапке)*/
+	white-space: normal;
+	
+	font-weight: bold;
+	color: white;
+    margin-top: -15px;
+	
+	
+}
+
+.dropdown-menu {
+	
+	/*центрирование списка с контактами*/
+    width: 400px !important;
+    height: 200px !important;
+	margin-top: 10px;
+}
+.container .row
+{
+    background-color: #9CDAFC;
+}
+img
+{
+	width: 300;
+	height: 300;
+	border-radius: 50%;
+	margin-top: 20;
+	margin-bottom: 40;
+	border: 2px solid grey;
+}
+img:hover
+{
+	width: 330;
+	height: 330;
+	border-radius: 50%;
+	margin-top: 5;
+	margin-bottom: 5;
+	border: 2px solid grey;
+}
+.vertical-center {
+	/* необходимо,чтобы прявязать контент к футеру и голове */
+    /* Fallback for browsers do NOT support vh unit */
+   /*min-height: 80vh; These two lines are counted as one :-)  bottom  h5  class = "my-3 mt-lg-5" */
+  min-height: 86%;
+
+
+  display: flex;
+  align-items: bottom;
+}
+
+div#footerDiv
+{
+	min-height: 50px;
+    background-color: #0275d8;
+}
+div#contentContainer
+{
+	
+	margin-bottom: 50px;
+}
+a#info
+{
+    font-size: normal;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 640px){
+		
+    .btn-outline-light{
+		position:absolute;
+		right:30px;
+		top:112px;		
+	}
+	
+}
+
+@media only screen and (min-width: 641px) and (max-width: 800px) 
+{
+	.btn-outline-light{
+		
+		position:absolute;
+		right:90px;
+		top:42px;
+		
+	}
+	
+}
+
+@media only screen and (min-width: 801px) and (max-width: 991px){
+    
+	.btn-outline-light{
+		
+	position :absolute;
+        top:10px;
+        right:80px;
+		
+	}
+.navbar-light .navbar-text
+    {
+        position: absolute;
+        top:45px;
+        left:15px;
+      
+    }
+.navbar-nav
+    {
+        
+        margin-top: 40px;
+    }
+ a#info
+    {
+        white-space: normal;
+        line-height:2;
+        text-align:left;
+        width:150px;
+        height:100px;
+        position: absolute;
+        top:64px;
+        right:10px;
+    }
+
+}
+/*когда меню больше не сворачивается*/
+@media only screen and (min-width: 992px){
+    
+    .btn-outline-light{
+		position:absolute;
+		right:15px;
+		top:5px;		
+	}
+    .navbar-light .navbar-text
+    {
+        position: absolute;
+        top:55px;
+        left:15px;
+      
+    }
+    a#info
+    {
+        position: absolute;
+        top:64px;
+        left:220px;
+    }
+    .navbar-nav
+    {
+       position: absolute;
+       top:65px;
+       right:15px; 
+    }
+    
+}
+/* 
+   = LARGE DISPLAYS   =
+   For small screens and tablets in vertical orientation, 
+   show a horizontal menubar in the header. 
+   Hide the header for screens that are large enough 
+@media only screen and (min-width: 801px) {
+  .sm-page-layout-region-header { display: none; }
+}
+*/
+/* 
+   = iPads and Small Monitors  =
+@media only screen and (min-width: 641px) and (max-width: 800px) {
+   /* Hide the left nav bar for screens that aren't large enough 
+  .sm-page-layout-region-left { display: none; } 
+*/
+   /* Move the center of the page to the left edge of the screen since the left
+       navbar is no longer there 
+  .sm-page-layout-region .sm-page-layout-region-center { margin-left: 0px !important; }
+} 
+*/
+/* 
+   = Mobile Phones  =
+@media only screen and (max-width: 640px) {
+  /* Hide the header from Mobile Phones 
+  .sm-page-layout-region-header .sm-page-widget-logo,
+  .sm-page-layout-region-top .sm-page-widget-nav { display: none !important; }
+}
+*/

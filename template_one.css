@@ -1,0 +1,339 @@
+
+body{
+/*	background-color: #F0F6ED;*/
+/*    background-color: #e6f2f2;*/
+    background-color:white;
+   font-family: "GothamPro"; 
+}
+.btn-outline-light
+{
+		font-family: "GothamProBlack";
+		right:15px;
+		bottom:70px;		
+}
+.navbar
+{
+/*	min-height: 12%;*/
+    min-height: 130px;
+    background-color: #9FD1E0;
+/*    более темный оттенок для анимаций мб 6D909A*/
+}
+.navbar-nav
+{
+    font-weight: 500; 
+}
+.navbar-light .navbar-brand
+{
+	/*пернос слов при масштабируемости (в шапке)*/
+	white-space: normal;
+    letter-spacing: 10px;
+	
+	font-weight: 400;
+    font-size: 46;
+	color: white;
+    font-family: "GothamProBlack";
+       
+	
+}
+.navbar-light .navbar-text
+{
+    font-family: "GothamProLight";
+    color: white;
+    font-weight: 600;
+    font-size:15;
+}
+a#menuitem
+{
+    color: white!important;
+    font-weight: 600;
+}
+a#menuitem:focus
+{
+    font-family: "GothamProBlack";
+    color: black!important;
+}
+
+.container .row .col-lg
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+       
+}
+.collapse
+{
+   
+    padding-top: 30px;
+}
+.tab-content
+{
+	margin-bottom: 120px;
+}
+.imglist
+{
+    max-width: 490px;
+
+}
+.imglistitem
+{
+    width: 118px;
+    height: 118px;
+}
+
+h5
+{
+    font-weight: 900;
+}
+img#logo
+{
+    height: 90px;
+    width: 90px;
+    margin-left: 10px;
+}
+img#productImg
+{
+	width: 300;
+	height: 300;
+	border-radius: 10%;
+	margin-top: 20;
+	margin-bottom: 40;
+
+}
+
+div#footerDiv
+{
+    position:fixed;/* необходимо,чтобы див с иконкими принял абсолютную позицию fixed можно будет поменять на relative */
+    bottom:0;
+	min-height: 80px;
+    background-color: #9FD1E0;
+}
+div#footerIconsDiv
+{
+ position: absolute;/* позиция в блоке родителя*/
+ right: 30px;
+ bottom: 21px;
+}
+div#numdiv
+{
+    height: 30px;
+    width: 700px;
+    margin-left: -50px;
+    margin-top: 30px;
+    color:white;
+    
+    
+}
+
+div#deliverWays
+{
+    width:  400px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: left;
+    
+
+    word-spacing: 30px; 
+}
+div#warehouse
+{
+    width: 700px;
+    margin-left: 300px;
+    margin-top: -70px;
+
+}
+
+
+a#info
+{
+    font-size: normal;
+    color: white;
+}
+p
+{
+    padding-top: 40px;
+}
+h6
+{
+    margin-top: 15px;
+}
+
+
+@media only screen and (max-width: 640px){
+	div#numdiv
+    {
+        width: 300px;
+        height: 100px;
+        white-space: normal;
+        padding-left: 10px;
+        margin-left: -10px;
+        text-align: left;
+    }
+    div#warehouse
+    {
+    width: 350px;
+    height: 440px;
+    
+    margin-top: 150px;
+    margin-left: 0px;
+    padding-top: 10px;
+    }
+    div#deliverWaysIcons
+    {
+      position: relative;
+      bottom: 10px;        
+    }
+    div#footerIconsDiv
+    {
+        width: 90px;
+        height:80px;
+        margin-top: 0px;
+        margin-right: -15px;
+    }
+    img#instico
+    {
+        margin-top:5px;
+    }
+    img#whatico
+    {
+        margin-top:5px;
+    }
+    	
+}
+@media only screen and (min-width: 641px) and (max-width: 800px) 
+{
+    div#numdiv
+    {
+        width: 300px;
+        height: 100px;
+        white-space: normal;
+        padding-left: 10px;
+        margin-left: -10px;
+        text-align: left;
+    }
+     div#brandDiv
+    {
+        width: 650px;
+        min-height: 82px;
+
+    }
+    div#warehouse
+    {
+    width: 350px;
+    height: 420px;
+    
+    margin-top: 150px;
+    margin-left: 0px;
+    }
+    
+    div#deliverWaysIcons
+    {
+    position: relative;
+    bottom: 10px;
+   
+    }
+
+}
+@media only screen and (min-width: 801px) and (max-width: 991px){
+    div#warehouse
+    {
+    width: 350px;
+    height: 420px;
+    
+    margin-top: 150px;
+    margin-left: 0px;
+    }
+
+
+	   
+.navbar-nav
+    {
+       margin-top: 0px!important;
+        
+    }
+div#brandDiv
+    {
+        width: 650px;
+        height: 80px;
+
+    }
+.navbar-nav
+    {
+        
+        margin-top: 40px;
+    }
+ a#info
+    {
+        white-space: normal;
+        line-height:2;
+        text-align:left;
+        width:180px;
+        height:60px;
+        position: absolute;
+        top:70px;
+        right:0px;
+    }
+
+}
+
+/*когда меню больше не сворачивается*/
+@media only screen and (min-width: 992px){
+    .btn-outline-light{
+		position:absolute;
+		right:15px;
+		bottom:50px;		
+	}
+    div#brandDiv
+    {
+        width: 440px;
+        height: 110px;
+        margin-left: 30px;
+        
+    }
+    .navbar-text
+    {   
+        margin-top: -20px;
+         
+    }
+    .navbar-brand
+    {
+        margin-top: 5px;
+        
+    }
+
+    a#info
+    {
+       position: absolute;
+       width:300px;
+       height:25px;
+       bottom:50px;
+       left:7px;
+    }
+    .navbar-nav
+    {
+       position: absolute;
+       bottom: 20px;
+       right:35px; 
+    }
+
+}
+
+@font-face {
+font-family: "GothamPro";  
+src: url("fonts/GothamPro/GothamPro.ttf") format("truetype"); 
+font-style: normal;     
+ 
+}
+@font-face {
+font-family: "GothamProBlack";  
+src: url("fonts/GothamPro/GothamPro-Black.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+}
+@font-face {
+font-family: "GothamProLight";  
+src: url("fonts/GothamPro/GothamPro-Light.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+}
